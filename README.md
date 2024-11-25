@@ -1,6 +1,6 @@
 <p align="center">¡Hola, soy <strong>Oscar Omar Aguilera de la Torre</strong>! 👋</p>
 
-<p align="center"><em>Ingeniero en Computación | Full Stack Developer | Universidad de Guadalajara 🎓</em></p>
+<p align="center"><em>Ingeniero en Computación | Full Stack Developer | Universidad de Guadalajara 🎓 Personal web https://oscardltlml.github.io/Oscardltlml/ </em></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Ingeniero%20en%20Computaci%C3%B3n-Universidad%20de%20Guadalajara-blue?style=for-the-badge" alt="Ingeniero en Computación | Universidad de Guadalajara">
