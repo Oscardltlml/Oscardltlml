@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Conversor de Temperaturas </h1>
+        <div class="form-group">
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" placeholder="Ingresa la temperatura">
+        </div>
+        <div class="form-group">
+            <label for="unidad">Unidad:</label>
+            <select id="unidad">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+                <option value="R">Rankine (R)</option>
+            </select>
+        </div>
+        <div class="boton">
+            <a onclick="calculos()" class="button">Calcular</a>
+        </div>  
+
+        <h2 class="titulo">Resultados:</h2>
+        <div id="resultados">
+            <div class="dato">
+                <label for="">°C:</label>
+                <input disabled class = "input-data" type="number" name="" id="C">
+            </div>
+            <div class="dato">
+                <label for="">°F:</label>
+                <input disabled class = "input-data" type="number" name="" id="F">
+            </div>
+            <div class="dato">
+                <label for="">K:</label>
+                <input disabled class = "input-data" type="number" name="" id="K">
+            </div>
+            <div class="dato">
+                <label for="">R:</label>
+                <input disabled class = "input-data" type="number" name="" id="R">
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="calculo.js"></script>
+</body>
+</html>

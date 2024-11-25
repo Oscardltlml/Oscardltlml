@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficador de funciones y concentrador de esfuerzos</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}}); 
+    </script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script defer src="grafica.js"></script>
+    <script defer src="charts.js"></script>
+    <script defer src="KTs.js"></script>
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="inputs">
+            <h2>Seleccione una función y su dominio</h2>
+            <div class="var-entradas">
+                <div class="dato">
+                    <label for="funcion">Función:</label>
+                    <select id="funcion" onchange="mostrarOpciones()">
+                        <option value="sin">Seno (sin(x))</option>
+                        <option value="cos">Coseno (cos(x))</option>
+                        <option value="tan">Tangente (tan(x))</option>
+                        <option value="exp">Exponencial (e^x)</option>
+                        <option value="ln">Logaritmo natural (ln(x))</option>
+                        <option value="concentrador">Concentrador de esfuerzos</option>
+                    </select>
+                </div>
+                <div id="opciones-funciones">
+                    <div class="dato">
+                        <label for="ancho">Dominio (mínimo y máximo):</label>
+                        <input placeholder="mín" type="number" id="domMin" value="-10">
+                        <input placeholder="máx" type="number" id="domMax" value="10">
+                    </div>
+                    <div class="dato">
+                        <label for="alto">Rango (mínimo y máximo):</label>
+                        <input placeholder="mín" type="number" id="ranMin" value="-10">
+                        <input placeholder="máx" type="number" id="ranMax" value="10">
+                    </div>
+                    <div class="boton-alinear">
+                        <button onclick="graficar()">Generar Gráfica</button>
+                    </div>
+                </div>
+                <div id="opciones-concentrador" style="display: none;">
+                    <fieldset>
+                        <legend>Concentrador de esfuerzos</legend>
+                        <div class="datos">
+                            <div class="dato">
+                                <label for="">$Ancho:$</label>
+                                <input placeholder="in" class="input-data" type="number" id="ancho">
+                            </div>
+                            <div class="dato">
+                                <label for="">$e:$</label>
+                                <input placeholder="in" class="input-data" type="number" id="edge">
+                            </div>
+                            <div class="dato">
+                                <label for="">$Ø_{orificio}:$</label>
+                                <input placeholder="in" class="input-data" type="number" id="dia">
+                            </div>
+                            <div class="dato">
+                                <label for="">$e/c$:</label>
+                                <input style="background-color: white;" disabled placeholder="in/in" class="input-data" type="number" id="e_c">
+                            </div>
+                            <div class="dato">
+                                <label for="">$e/Ø_{orificio}:$</label>
+                                <input style="background-color: white;" disabled placeholder="in/in" class="input-data" type="number" id="e_d">
+                            </div>
+                            <div class="dato">
+                                <label for="">$K_{TG}:$</label>
+                                <input style="background-color: white;" disabled placeholder="adimensional" class="input-data" type="text" id="KTG">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="boton-alinear">
+                        <button onclick="KT()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plot">
+            <div id="chart_div" style="width: 900px; height: 500px"></div>
+        </section>
+    </main>
+
+    <script>
+        function mostrarOpciones() {
+            const funcion = document.getElementById("funcion").value;
+            const opcionesFunciones = document.getElementById("opciones-funciones");
+            const opcionesConcentrador = document.getElementById("opciones-concentrador");
+
+            if (funcion === "concentrador") {
+                opcionesFunciones.style.display = "none";
+                opcionesConcentrador.style.display = "block";
+            } else {
+                opcionesFunciones.style.display = "block";
+                opcionesConcentrador.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
