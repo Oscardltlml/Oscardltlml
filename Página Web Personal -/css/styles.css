@@ -1,0 +1,158 @@
+:root {
+    --negro: #151515;
+    --dverde: #A91D3A;
+    --nrojo: #C73659;
+    --blanco: #EEEEEE;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+/* Contenedor */
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+/* Imagen cloudy */
+.cloudy-img {
+    width: 20%;
+    height: auto;
+    opacity: 0.8;
+    margin-top: 2rem;
+}
+
+/* Botón */
+.boton {
+    background-color: var(--nrojo);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: var(--blanco);
+    color: var(--nrojo);
+}
+
+/* Sombra */
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Tipografía */
+h1 {
+    font-size: 3.8rem;
+    color: var(--nrojo);
+}
+
+h2 {
+    font-size: 2.8rem;
+    color: var(--blanco);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--dverde);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Navegación Principal */
+.nav-bg {
+    background-color: var(--dverde);
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: var(--dverde);
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--nrojo);
+    color: var(--blanco);
+}
+
+/* Hero */
+.hero {
+    background-color: var(--dverde);
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.contenido-hero h2 {
+    color: var(--blanco);
+}
+
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.contenido-hero .ubicacion {
+    display: flex;
+    align-items: flex-end;
+}

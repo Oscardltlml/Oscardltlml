@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Fondo negro */
+    color: red; /* Texto rojo */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: black; /* Fondo negro */
+    color: red; /* Texto rojo */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid red; /* Borde rojo */
+}
+
+.dato {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    column-gap: 1rem; /* Espacio entre columnas */
+    margin-bottom: 15px;
+}
+
+.titulo {
+    text-align: center;
+    color: red; /* Títulos en rojo */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 2fr 10fr 1fr;
+    column-gap: 1rem; /* Espacio entre columnas */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: red; /* Etiquetas en rojo */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red; /* Borde rojo */
+    border-radius: 5px;
+    background: black; /* Fondo negro */
+    color: red; /* Texto rojo */
+}
+
+.boton {
+    text-align: center;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: red; /* Fondo rojo */
+    color: black; /* Texto negro */
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: black; /* Fondo negro al pasar el ratón */
+    color: red; /* Texto rojo */
+    cursor: pointer;
+    border: 1px solid red; /* Borde rojo para destacar */
+}

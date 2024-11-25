@@ -1,0 +1,141 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* https://necolas.github.io/normalize.css/ */
+/* Document
+   ========================================================================== */
+
+   html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    background-color: black; /* Fondo negro */
+    color: red; /* Texto rojo */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  body {
+    margin: 0;
+    background-color: black; /* Fondo negro */
+    color: red; /* Texto rojo */
+  }
+  
+  main {
+    display: block;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: red; /* Títulos en rojo */
+  }
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+    border: 1px solid red; /* Línea divisoria en rojo */
+  }
+  
+  pre, code, kbd, samp {
+    color: red; /* Texto en componentes técnicos */
+    background-color: black; /* Fondo negro */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  a {
+    background-color: transparent;
+    color: red; /* Enlaces en rojo */
+  }
+  
+  abbr[title] {
+    text-decoration: underline;
+    text-decoration: underline dotted;
+  }
+  
+  b, strong {
+    font-weight: bolder;
+    color: red; /* Texto en negrita en rojo */
+  }
+  
+  small {
+    font-size: 80%;
+    color: red;
+  }
+  
+  sub, sup {
+    font-size: 75%;
+    color: red;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    color: red; /* Texto de formularios */
+    background-color: black; /* Fondo negro */
+    border: 1px solid red; /* Bordes rojos */
+  }
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  button:hover,
+  input:hover {
+    background-color: red; /* Fondo rojo al pasar el cursor */
+    color: black; /* Texto negro */
+  }
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+    border: 1px solid red; /* Bordes rojos */
+    color: red; /* Texto en rojo */
+  }
+  
+  legend {
+    color: red; /* Leyendas en rojo */
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  details {
+    display: block;
+  }
+  
+  summary {
+    display: list-item;
+    color: red; /* Resúmenes en rojo */
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  template {
+    display: none;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+  

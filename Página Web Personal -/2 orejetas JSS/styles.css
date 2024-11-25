@@ -1,0 +1,133 @@
+:root {
+    --negro: #000000; /* Negro puro */
+    --rojo: #ff0000;  /* Rojo intenso */
+    --gris: #808080;  /* Gris para tonos secundarios */
+}
+
+.container {
+    width: 1200px;
+    margin: 25px auto;
+    background-color: var(--negro); /* Fondo negro para destacar el contenido */
+    padding: 25px 0;
+    border: 2px solid var(--rojo); /* Bordes rojos para un toque Deadpool */
+}
+
+h1 {
+    text-align: center;
+    color: var(--rojo); /* Texto rojo */
+    background-color: var(--negro); /* Fondo negro */
+    margin: 0 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--rojo);
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--negro); /* Texto negro */
+    background-color: var(--rojo); /* Fondo rojo */
+    margin: 25px 25px 0px 25px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+h3 {    
+    color: var(--rojo);
+    text-transform: uppercase;
+    background-color: var(--gris);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form {
+    margin: 0px 25px;
+}
+
+legend {
+    padding: 25px 0px;
+    color: var(--rojo);
+    text-transform: uppercase; 
+}
+
+fieldset {
+    margin-top: 0px;
+    border: 2px solid var(--rojo);
+}
+
+label {
+    color: var(--rojo);    
+    font-weight: bold;
+}
+
+.data-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 3.5px;
+    margin: 0px;
+}
+
+.lug, .sujetador {
+    display: grid;
+    grid-template-columns: 0.25fr 0.75fr;
+    margin-top: 1.5rem;
+}
+
+.lug, .sujetador label {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.lug-datos {
+    color: var(--gris);
+}
+
+.lug-datos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    margin-top: 1.5rem;
+    margin-left: 20rem;
+    margin-right: 5px;
+    row-gap: 0.85rem;
+    column-gap: 0.85rem;
+}
+
+.lug-dato input {
+    width: 100%;
+    margin-top: 0.35rem;
+    background-color: var(--negro);
+    color: var(--rojo);
+    border: 1px solid var(--rojo);
+}
+
+.btn-alinear {
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    background-color: var(--rojo);
+    color: var(--negro);
+    text-transform: uppercase;
+    padding: .75rem 2.5rem;
+    border-color: var(--negro);
+    border-width: 2.5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--negro);
+    color: var(--rojo);
+    border-color: var(--rojo);
+}
+
+input[disabled] {
+    color: var(--rojo);
+    background-color: var(--negro);
+    border-color: var(--rojo);
+    font-weight: bold;
+    padding-left: 5.5px;
+}
+
