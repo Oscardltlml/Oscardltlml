@@ -48,7 +48,7 @@
 
 <ul>
   <li><strong>Correo:</strong> <a href="mailto:oscar.aguileradlt12@gmail.com">oscar.aguileradlt12@gmail.com</a></li>
-  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oscar-omar-aguilera-de-la-torre-444754324" target="_blank">Oscar Omar Aguilera de la Torre</a></li>
+  <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/oscar-aguilera-229754329/="_blank">Oscar Omar Aguilera de la Torre</a></li>
 </ul>
 
 <hr>
