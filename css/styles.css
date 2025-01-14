@@ -2,7 +2,7 @@
     --negro: #151515;
     --dverde: #A91D3A;
     --nrojo: #C73659;
-    --blanco: #EEEEEE;
+    --blanco: #8e8e8e;
 }
 
 /* Globales */
@@ -21,6 +21,7 @@ body {
     font-family: 'Krub', sans-serif;
     background-color: var(--negro);
     color: var(--blanco);
+    margin: 0;
 }
 
 /* Contenedor */
@@ -155,4 +156,64 @@ h1, h2, h3 {
 .contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
+}
+
+/* Estilo para la tabla de mensajes */
+.tabla-mensajes {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2b2b2b; /* Fondo gris oscuro para la tabla */
+    color: var(--blanco); /* Texto blanco */
+    font-family: Arial, sans-serif;
+}
+
+.tabla-mensajes th, .tabla-mensajes td {
+    padding: 10px;
+    border: 1px solid #444; /* Borde más oscuro para las celdas */
+    text-align: left;
+}
+
+.tabla-mensajes th {
+    background-color: var(--nrojo); /* Fondo rojo para los encabezados */
+    color: var(--blanco); /* Texto blanco en los encabezados */
+}
+
+.tabla-mensajes tr:nth-child(even) {
+    background-color: #3b3b3b; /* Fondo gris oscuro para las filas pares */
+}
+
+.tabla-mensajes tr:hover {
+    background-color: var(--dverde); /* Fondo verde cuando pasa el mouse */
+}
+
+/* Estilo para el mensaje de confirmación */
+.mensaje-confirmacion {
+    color: var(--blanco);
+    background-color: var(--nrojo);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 800;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+    animation: mostrarMensaje 2s ease-in-out;
+    border: 3px solid var(--negro);
+    transform: scale(1.05);
+}
+
+/* Animación para el mensaje de confirmación */
+@keyframes mostrarMensaje {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px) scale(0.9);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(5px) scale(1.02);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
